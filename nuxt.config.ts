@@ -2,6 +2,13 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+  // UI Pro license configuration
+  ui: {
+    icons: ['heroicons', 'simple-icons'],
+    primary: 'blue',
+    gray: 'cool',
+    license: process.env.NUXT_UI_PRO_LICENSE
+  },
   extends: [
     '@nuxt/ui-pro'
   ],
@@ -23,13 +30,6 @@ export default defineNuxtConfig({
       theme: 'github-dark'
     }
   } as any,
-
-  // UI configuration
-  ui: {
-    icons: ['heroicons', 'simple-icons'],
-    primary: 'blue',
-    gray: 'cool'
-  },
 
   // TypeScript configuration
   typescript: {

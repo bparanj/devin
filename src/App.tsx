@@ -2,14 +2,14 @@ import { useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Legend } from 'recharts';
 import { sampleLossData } from './data/loss-data';
 import { PlusCircle, X, Upload } from 'lucide-react';
-import { DataPoint } from './types';
+import { LossDataPoint } from './types/index';
 
 interface Annotation {
   epoch: number;
   text: string;
 }
 
-const validateData = (data: any[]): DataPoint[] | null => {
+const validateData = (data: any[]): LossDataPoint[] | null => {
   if (!Array.isArray(data) || data.length < 5) {
     return null;
   }
@@ -26,7 +26,7 @@ const validateData = (data: any[]): DataPoint[] | null => {
 };
 
 function App() {
-  const [rawData, setRawData] = useState<DataPoint[]>(sampleLossData);
+  const [rawData, setRawData] = useState<LossDataPoint[]>(sampleLossData);
   const [annotations, setAnnotations] = useState<Annotation[]>([]);
   const [selectedEpoch, setSelectedEpoch] = useState<number | null>(null);
   const [annotationText, setAnnotationText] = useState('');
@@ -39,13 +39,13 @@ function App() {
     }
     acc[point.run].push(point);
     return acc;
-  }, {} as Record<string, DataPoint[]>);
+  }, {} as Record<string, LossDataPoint[]>);
 
   // Transform data for chart - create one series per run
   const chartData = Array.from(new Set(rawData.map(d => d.epoch))).map(epoch => {
     const point: Record<string, any> = { epoch };
-    Object.entries(groupedData).forEach(([run, points]) => {
-      const matchingPoint = points.find(p => p.epoch === epoch);
+    Object.entries(groupedData).forEach(([run, points]: [string, LossDataPoint[]]) => {
+      const matchingPoint = points.find((p: LossDataPoint) => p.epoch === epoch);
       point[run] = matchingPoint?.loss;
     });
     return point;
@@ -120,13 +120,13 @@ function App() {
         <ResponsiveContainer width="100%" height={400}>
           <LineChart 
             data={chartData} 
-            margin={{ top: 20, right: 30, left: 20, bottom: 20 }}
+            margin={{ top: 40, right: 30, left: 20, bottom: 50 }}
             onClick={handleChartClick}
           >
             <CartesianGrid strokeDasharray="3 3" className="text-gray-200" />
             <XAxis 
               dataKey="epoch" 
-              label={{ value: 'Epoch', position: 'bottom', offset: 0 }}
+              label={{ value: 'Epoch', position: 'bottom', offset: 10 }}
               tickLine={true}
               axisLine={true}
             />
@@ -150,7 +150,7 @@ function App() {
               contentStyle={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}
             />
             <Legend 
-              verticalAlign="bottom"
+              verticalAlign="top"
               height={36}
               formatter={(value) => {
                 const [lr, batch] = value.split(',');

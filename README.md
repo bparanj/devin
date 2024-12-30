@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# Loss Visualization Chart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive visualization tool for machine learning training runs that allows you to track and compare loss metrics across different training configurations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📈 Visualize loss progression across training epochs
+- 🔄 Support for multiple training runs with different parameters
+- 📝 Interactive annotations for marking important points
+- 🔍 Detailed tooltips showing exact values
+- 📊 Responsive chart design
+- 📁 JSON file upload support
 
-## Expanding the ESLint configuration
+## Sample Data Format
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The application accepts JSON files with the following structure:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```json
+[
+  { "epoch": 1, "run": "lr=0.01,batch=32", "loss": 0.78 },
+  { "epoch": 2, "run": "lr=0.01,batch=32", "loss": 0.66 },
+  { "epoch": 3, "run": "lr=0.01,batch=32", "loss": 0.57 },
+  { "epoch": 1, "run": "lr=0.001,batch=64", "loss": 0.92 },
+  { "epoch": 2, "run": "lr=0.001,batch=64", "loss": 0.85 },
+  { "epoch": 3, "run": "lr=0.001,batch=64", "loss": 0.75 }
+]
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Each data point requires:
+- `epoch`: Training epoch number (integer)
+- `run`: Configuration string (format: "lr={learning_rate},batch={batch_size}")
+- `loss`: Loss value for that epoch (float)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Local Development
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd accuracy-over-time-chart
 ```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## Production Deployment
+
+1. Build the application:
+```bash
+npm run build
+```
+
+2. Preview the production build locally:
+```bash
+npm run preview
+```
+
+3. The built files will be in the `dist` directory, ready for deployment to your preferred hosting platform.
+
+## Data Validation
+
+The application includes built-in validation for uploaded JSON files:
+
+- Checks for required fields (epoch, run, loss)
+- Validates data types (epoch: integer, loss: number)
+- Ensures run format follows the pattern "lr={value},batch={value}"
+- Verifies that epochs are sequential within each run
+
+## Usage Instructions
+
+1. Launch the application
+2. Click the "Upload JSON" button
+3. Select your training data file
+4. The chart will automatically update to display your data
+5. Hover over data points to see detailed information
+6. Click on the chart to add annotations for important points
+7. Use the legend to toggle different training runs
+
+## Sample Data
+
+A sample data file is included in the repository at `scripts/sample_training_data.json`. You can use this to test the visualization features.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.

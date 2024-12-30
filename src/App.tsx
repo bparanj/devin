@@ -120,7 +120,7 @@ function App() {
         <ResponsiveContainer width="100%" height={400}>
           <LineChart 
             data={chartData} 
-            margin={{ top: 40, right: 30, left: 20, bottom: 50 }}
+            margin={{ top: 40, right: 30, left: 60, bottom: 50 }}
             onClick={handleChartClick}
           >
             <CartesianGrid strokeDasharray="3 3" className="text-gray-200" />
@@ -135,7 +135,7 @@ function App() {
                 value: 'Loss', 
                 angle: -90, 
                 position: 'left', 
-                offset: 0,
+                offset: 20,
                 style: { textAnchor: 'middle' }
               }}
               tickFormatter={(value) => value.toFixed(4)}
@@ -151,7 +151,7 @@ function App() {
             />
             <Legend 
               verticalAlign="top"
-              height={36}
+              height={40}
               formatter={(value) => {
                 const [lr, batch] = value.split(',');
                 return `${lr}, ${batch}`;

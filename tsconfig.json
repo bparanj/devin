@@ -1,11 +1,12 @@
 {
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Node",
     "strict": true,
-    "jsx": "preserve",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": [
+      "@nuxt/content",
+      "@nuxt/ui-pro/schema",
+      "@nuxt/image"
+    ]
   }
 }

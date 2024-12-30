@@ -1,6 +1,6 @@
-import { DataPoint } from '../types/index';
+import { LossDataPoint } from '../types/index';
 
-export const sampleLossData: DataPoint[] = [
+export const sampleLossData: LossDataPoint[] = [
   { epoch: 1, run: "lr=0.01,batch=32", loss: 0.90 },
   { epoch: 2, run: "lr=0.01,batch=32", loss: 0.78 },
   { epoch: 3, run: "lr=0.01,batch=32", loss: 0.66 },

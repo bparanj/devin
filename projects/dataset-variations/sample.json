@@ -1,0 +1,8 @@
+[
+  { "dataset": "Cross-Validation Fold 1", "metric": 0.878 },
+  { "dataset": "Cross-Validation Fold 2", "metric": 0.892 },
+  { "dataset": "Cross-Validation Fold 3", "metric": 0.885 },
+  { "dataset": "Cross-Validation Fold 4", "metric": 0.891 },
+  { "dataset": "Cross-Validation Fold 5", "metric": 0.883 },
+  { "dataset": "Hold-out Test", "metric": 0.879 }
+]

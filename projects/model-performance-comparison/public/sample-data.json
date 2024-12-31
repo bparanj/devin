@@ -1,0 +1,10 @@
+[
+  { "model": "BERT-base", "metric": 0.234 },
+  { "model": "GPT-2 Small", "metric": 0.312 },
+  { "model": "ResNet-50", "metric": 0.445 },
+  { "model": "LSTM", "metric": 0.289 },
+  { "model": "T5-small", "metric": 0.378 },
+  { "model": "ViT", "metric": 0.567 },
+  { "model": "RoBERTa", "metric": 0.298 },
+  { "model": "DenseNet", "metric": 0.423 }
+]

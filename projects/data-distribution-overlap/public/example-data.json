@@ -1,0 +1,17 @@
+[
+  { "id": "point1",  "x": 2.0, "y": 2.0, "class": "A" },
+  { "id": "point2",  "x": 2.2, "y": 2.1, "class": "A" },
+  { "id": "point3",  "x": 2.1, "y": 1.9, "class": "A" },
+  { "id": "point4",  "x": 2.3, "y": 2.2, "class": "A" },
+  { "id": "point5",  "x": 2.4, "y": 2.0, "class": "A" },
+  { "id": "point6",  "x": 2.2, "y": 2.3, "class": "B" },
+  { "id": "point7",  "x": 2.3, "y": 2.1, "class": "B" },
+  { "id": "point8",  "x": 2.4, "y": 2.2, "class": "B" },
+  { "id": "point9",  "x": 2.5, "y": 2.3, "class": "B" },
+  { "id": "point10", "x": 2.3, "y": 2.4, "class": "B" },
+  { "id": "point11", "x": 2.1, "y": 2.2, "class": "C" },
+  { "id": "point12", "x": 2.2, "y": 2.2, "class": "C" },
+  { "id": "point13", "x": 2.3, "y": 2.3, "class": "C" },
+  { "id": "point14", "x": 2.4, "y": 2.1, "class": "C" },
+  { "id": "point15", "x": 2.2, "y": 2.0, "class": "C" }
+]

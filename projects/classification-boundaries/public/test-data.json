@@ -1,0 +1,40 @@
+{
+  "points": [
+    { "id": "point1", "x": 0.0, "y": 2.0, "class": "A" },
+    { "id": "point2", "x": 1.7, "y": 1.0, "class": "A" },
+    { "id": "point3", "x": 1.7, "y": -1.0, "class": "A" },
+    { "id": "point4", "x": 0.0, "y": -2.0, "class": "B" },
+    { "id": "point5", "x": -1.7, "y": -1.0, "class": "B" },
+    { "id": "point6", "x": -1.7, "y": 1.0, "class": "B" },
+    { "id": "point7", "x": 0.0, "y": 0.0, "class": "C" },
+    { "id": "point8", "x": 0.8, "y": 0.0, "class": "C" },
+    { "id": "point9", "x": -0.8, "y": 0.0, "class": "C" }
+  ],
+  "boundary": [
+    { "x": -2.0, "y": -2.0, "predictedClass": "B" },
+    { "x": -2.0, "y": -1.0, "predictedClass": "B" },
+    { "x": -2.0, "y": 0.0, "predictedClass": "B" },
+    { "x": -2.0, "y": 1.0, "predictedClass": "B" },
+    { "x": -2.0, "y": 2.0, "predictedClass": "B" },
+    { "x": -1.0, "y": -2.0, "predictedClass": "B" },
+    { "x": -1.0, "y": -1.0, "predictedClass": "B" },
+    { "x": -1.0, "y": 0.0, "predictedClass": "C" },
+    { "x": -1.0, "y": 1.0, "predictedClass": "B" },
+    { "x": -1.0, "y": 2.0, "predictedClass": "B" },
+    { "x": 0.0, "y": -2.0, "predictedClass": "B" },
+    { "x": 0.0, "y": -1.0, "predictedClass": "C" },
+    { "x": 0.0, "y": 0.0, "predictedClass": "C" },
+    { "x": 0.0, "y": 1.0, "predictedClass": "C" },
+    { "x": 0.0, "y": 2.0, "predictedClass": "A" },
+    { "x": 1.0, "y": -2.0, "predictedClass": "A" },
+    { "x": 1.0, "y": -1.0, "predictedClass": "A" },
+    { "x": 1.0, "y": 0.0, "predictedClass": "C" },
+    { "x": 1.0, "y": 1.0, "predictedClass": "A" },
+    { "x": 1.0, "y": 2.0, "predictedClass": "A" },
+    { "x": 2.0, "y": -2.0, "predictedClass": "A" },
+    { "x": 2.0, "y": -1.0, "predictedClass": "A" },
+    { "x": 2.0, "y": 0.0, "predictedClass": "A" },
+    { "x": 2.0, "y": 1.0, "predictedClass": "A" },
+    { "x": 2.0, "y": 2.0, "predictedClass": "A" }
+  ]
+}

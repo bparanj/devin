@@ -1,0 +1,14 @@
+[
+  { "epoch": 1,  "training": 0.95, "validation": 0.88 },
+  { "epoch": 2,  "training": 0.85, "validation": 0.82 },
+  { "epoch": 3,  "training": 0.75, "validation": 0.76 },
+  { "epoch": 4,  "training": 0.65, "validation": 0.72 },
+  { "epoch": 5,  "training": 0.55, "validation": 0.70 },
+  { "epoch": 6,  "training": 0.45, "validation": 0.71 },
+  { "epoch": 7,  "training": 0.35, "validation": 0.73 },
+  { "epoch": 8,  "training": 0.30, "validation": 0.75 },
+  { "epoch": 9,  "training": 0.25, "validation": 0.78 },
+  { "epoch": 10, "training": 0.20, "validation": 0.82 },
+  { "epoch": 11, "training": 0.18, "validation": 0.85 },
+  { "epoch": 12, "training": 0.15, "validation": 0.89 }
+]

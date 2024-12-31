@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background-color: white;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  z-index: 10;
+}
+
+.training-line:hover,
+.validation-line:hover {
+  stroke-width: 3;
+}

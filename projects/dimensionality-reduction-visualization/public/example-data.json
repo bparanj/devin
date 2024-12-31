@@ -1,0 +1,74 @@
+[
+  {
+    "id": "point1",
+    "x": 3.5,
+    "y": 4.2,
+    "label": "Group 1"
+  },
+  {
+    "id": "point2",
+    "x": 3.8,
+    "y": 3.9,
+    "label": "Group 1"
+  },
+  {
+    "id": "point3",
+    "x": 3.2,
+    "y": 4.5,
+    "label": "Group 1"
+  },
+  {
+    "id": "point4",
+    "x": -2.1,
+    "y": -3.4,
+    "label": "Group 2"
+  },
+  {
+    "id": "point5",
+    "x": -2.5,
+    "y": -3.1,
+    "label": "Group 2"
+  },
+  {
+    "id": "point6",
+    "x": -2.8,
+    "y": -3.6,
+    "label": "Group 2"
+  },
+  {
+    "id": "point7",
+    "x": -3.2,
+    "y": 2.8,
+    "label": "Group 3"
+  },
+  {
+    "id": "point8",
+    "x": -3.5,
+    "y": 3.1,
+    "label": "Group 3"
+  },
+  {
+    "id": "point9",
+    "x": -3.1,
+    "y": 2.5,
+    "label": "Group 3"
+  },
+  {
+    "id": "point10",
+    "x": 2.4,
+    "y": -2.8,
+    "label": "Group 4"
+  },
+  {
+    "id": "point11",
+    "x": 2.1,
+    "y": -3.2,
+    "label": "Group 4"
+  },
+  {
+    "id": "point12",
+    "x": 2.7,
+    "y": -2.5,
+    "label": "Group 4"
+  }
+]

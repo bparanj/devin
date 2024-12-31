@@ -1,0 +1,62 @@
+[
+  {
+    "id": "spiral1",
+    "x": 0.0,
+    "y": 0.0,
+    "label": "Core"
+  },
+  {
+    "id": "spiral2",
+    "x": 1.0,
+    "y": 0.2,
+    "label": "Spiral A"
+  },
+  {
+    "id": "spiral3",
+    "x": 0.8,
+    "y": 1.5,
+    "label": "Spiral A"
+  },
+  {
+    "id": "spiral4",
+    "x": -0.5,
+    "y": 2.0,
+    "label": "Spiral A"
+  },
+  {
+    "id": "spiral5",
+    "x": -2.0,
+    "y": 0.5,
+    "label": "Spiral B"
+  },
+  {
+    "id": "spiral6",
+    "x": -1.5,
+    "y": -1.0,
+    "label": "Spiral B"
+  },
+  {
+    "id": "spiral7",
+    "x": 0.0,
+    "y": -2.0,
+    "label": "Spiral B"
+  },
+  {
+    "id": "spiral8",
+    "x": 2.0,
+    "y": -1.5,
+    "label": "Spiral C"
+  },
+  {
+    "id": "spiral9",
+    "x": 2.5,
+    "y": 0.0,
+    "label": "Spiral C"
+  },
+  {
+    "id": "spiral10",
+    "x": 1.5,
+    "y": 2.0,
+    "label": "Spiral C"
+  }
+]

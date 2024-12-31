@@ -1,0 +1,16 @@
+[
+  { "id": "point1", "x": 0.0, "y": 0.0, "outlier": false },
+  { "id": "point2", "x": 0.5, "y": 0.8, "outlier": false },
+  { "id": "point3", "x": 1.2, "y": 1.4, "outlier": false },
+  { "id": "point4", "x": 2.1, "y": 1.8, "outlier": false },
+  { "id": "point5", "x": 3.0, "y": 1.9, "outlier": false },
+  { "id": "point6", "x": 3.8, "y": 1.7, "outlier": false },
+  { "id": "point7", "x": 4.4, "y": 1.2, "outlier": false },
+  { "id": "point8", "x": 4.7, "y": 0.5, "outlier": false },
+  { "id": "point9", "x": -5.0, "y": -5.0, "outlier": true },
+  { "id": "point10", "x": -5.0, "y": 5.0, "outlier": true },
+  { "id": "point11", "x": 5.0, "y": -5.0, "outlier": true },
+  { "id": "point12", "x": 5.0, "y": 5.0, "outlier": true },
+  { "id": "point13", "x": 0.0, "y": 7.0, "outlier": true },
+  { "id": "point14", "x": 7.0, "y": 0.0, "outlier": true }
+]

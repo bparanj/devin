@@ -1,0 +1,26 @@
+[
+  {
+    "paramValue": "10 hidden units",
+    "metric": 0.78
+  },
+  {
+    "paramValue": "32 hidden units",
+    "metric": 0.82
+  },
+  {
+    "paramValue": "64 hidden units",
+    "metric": 0.85
+  },
+  {
+    "paramValue": "128 hidden units",
+    "metric": 0.89
+  },
+  {
+    "paramValue": "256 hidden units",
+    "metric": 0.87
+  },
+  {
+    "paramValue": "512 hidden units",
+    "metric": 0.86
+  }
+]

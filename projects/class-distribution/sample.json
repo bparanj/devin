@@ -1,0 +1,7 @@
+[
+  { "class": "Insects", "count": 2500 },
+  { "class": "Arachnids", "count": 1200 },
+  { "class": "Crustaceans", "count": 800 },
+  { "class": "Myriapods", "count": 300 },
+  { "class": "Mollusks", "count": 1500 }
+]
